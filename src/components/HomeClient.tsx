@@ -3,7 +3,6 @@
 import { useEffect, useState, ReactNode } from "react"
 import { HeroSequence } from "./HeroSequence"
 import Link from 'next/link'
-import { DonateButton } from "./DonateButton"
 
 interface HomeClientProps {
     user: any
@@ -65,7 +64,6 @@ export function HomeClient({ user, signOutAction, children }: HomeClientProps) {
                 </div>
 
                 <div className="flex items-center gap-8 md:gap-12 pointer-events-auto">
-                    <DonateButton />
                     <Link href="/guidelines" className="group flex items-center gap-2">
                         <span className="text-[10px] tracking-widest text-gray-500 group-hover:text-blue-500 transition-all duration-500 uppercase font-mono">
                             Safety_Protocols
